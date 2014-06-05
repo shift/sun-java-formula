@@ -3,9 +3,9 @@
 
 {%- set java_home      = salt['grains.get']('java_home', salt['pillar.get']('java_home', '/usr/lib/java')) %}
 
-{%- set default_version_name = 'jdk1.7.0_45' %}
+{%- set default_version_name = 'jdk1.7.0_60' %}
 {%- set default_prefix       = '/usr/share/java' %}
-{%- set default_source_url   = 'http://download.oracle.com/otn-pub/java/jdk/7u45-b18/jdk-7u45-linux-x64.tar.gz' %}
+{%- set default_source_url   = 'http://download.oracle.com/otn-pub/java/jdk/7u60-b19/jdk-7u60-linux-x64.tar.gz' %}
 {%- set default_dl_opts      = '-b oraclelicense=accept-securebackup-cookie -L' %}
 
 {%- set version_name   = g.get('version_name', p.get('version_name', default_version_name)) %}
